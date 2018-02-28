@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Яна Фокина](https://up.htmlacademy.ru/htmlcss/20/user/473449).
-* Наставник: [Ольга Попова] (https://htmlacademy.ru/profile/olga_popova).
+* Наставник: [Ольга Попова](https://htmlacademy.ru/profile/olga_popova).
 
 ---
 
