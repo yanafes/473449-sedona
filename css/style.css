@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(fonts/ptsans.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url(fonts/ptsans.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+ margin: 0;
+ padding: 0;
+  
+ font-size: 14px;
+ line-height: 21px;
+ color: #000000;
+ font-weight: normal;
+ font-family: PTsans, Arial, sans-serif;
+  
+ text-transform: uppercase;
+ text-align: center;
+  
+  background-color: #ffffff
+    
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-weight: bold;
+  line-height: 26px;
+  
+  color: #000000;
+  
+  background-color: #ffffff;
+  
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.intro {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.intro-2 {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.item-1,
+.item-2 {
+  color: #ffffff;
+  
+  background-color: #81b3d2;
+}
+
+.unnumbered {
+  list-style: none;
+}
+
+.item-1 h3,
+.item-2 h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  
+  color: #ffffff;
+}
+
+.items-3-4-5 {
+  background-color: #eeeeee;
+}
+
+.items-3-4-5 h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  
+  color: #000000;
+}
+
+.footer-item-1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+ 
+.footer-item-2 {
+ font-size: 14px;
+ line-height: 26px;
+}
+
+.social-icons {
+  list-style: none;
+  
+}
+

@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo">
-      <img src="http://placehold.it/150x100" alt="Логотип Sedona">
+      <a>
+        <img src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -21,24 +23,25 @@
     <main>
       <section class="representation">
         <h1 class="visually-hidden">Sedona</h1>
-        <img src="http://placehold.it/150x100" alt="Фото Седона">
-        <!--картинка из фотошопа с текстом-->
+        <img src="img/intro.jpg" width="1200" height="800" alt="Фото Седона">
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p>Седона-небольшой городок в Аризоне,
+        <p class="intro">Седона-небольшой городок в Аризоне,
           заслуживающий большего!
         </p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ol>
+        <p class="intro-2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <ol class="features-list">
           <li>
+            <div class="item-1">
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона-не аттракцион для туристов,
               там течет своя жизнь
             </p>
-            <img src="http://placehold.it/150x100" alt="Настоящий городок Седона">
-            <ul>
+            </div>
+            <img src="img/Sedona-is-real-town.jpg" width="800" height="400" alt="Настоящий городок Седона">
+            <ul class="unnumbered">
               <li>
                 <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем
@@ -60,15 +63,18 @@
             </ul>
           </li>
           <li>
+            <div class="item-2">
             <h3>Там есть мост дьявола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
-            <img src="http://placehold.it/150x100" alt="Мост Дьявола">
+            </div>
+            <img src="img/Devil's-bridge.jpg" width="800" height="400" alt="Мост Дьявола">
           </li>
+          <div class="items-3-4-5">
           <li>
-            <h3>Небольшая площадь</h3>
-            <p>-№3-</p>
-            <p>Все достопримечательности находятся очень близко</p>
+              <h3>Небольшая площадь</h3>
+              <p>-№3-</p>
+              <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
             <h3>Красивая дорога</h3>
@@ -80,19 +86,20 @@
             <p>-№5-</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
+          </div>
         </ol>
       </section>
       <div class="feedback">
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="https://www.google.ru/maps/place/Седона,+Аризона+86336,+США/@34.8543734,-111.8301578,13z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896?hl=ru">
-        <img src="" width="" height="" alt="">
+        <img src="img/map.jpg" width="1718" height="748" alt="Карта расположения Седоны">
         </a>
         <!--форма ввода-->
       </div>
     </main>
     <footer>
-      <p class="footer-item">#Visitsedona</p>
+      <p class="footer-item-1">#Visitsedona</p>
       <ul class="social-icons">
         <li class="social-icons_item">
           <a href="https://twitter.com/Sedona-city/">Седона в Твиттер</a>
@@ -104,9 +111,11 @@
           <a href="https://youtube.com/Sedona-city/">Седона в Ютьюб</a>
         </li>
       </ul>
-      <div class="footer-item">
+      <div class="footer-item-2">
         <p>Webside by</p>
-        <img src="img/htmlacademy-logo.svg" alt="Логотип htmlacademy" class="htmlacademylogo-img">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy" class="logo-htmlacademy-img">
+        </a>  
       </div>
     </footer>
   </body>
