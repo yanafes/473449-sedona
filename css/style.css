@@ -1,13 +1,13 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(fonts/ptsans.woff2) format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
-  src: url(fonts/ptsans.woff2) format("woff2");
+  font-family: "PT Sans";
+  src: url("..fonts/ptsans.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -17,16 +17,17 @@ body {
  margin: 0;
  padding: 0;
   
+ font-family: "PT Sans", Arial, sans-serif;
+ font-weight: 400;
+ font-style: normal;
  font-size: 14px;
  line-height: 21px;
  color: #000000;
- font-weight: normal;
- font-family: PTsans, Arial, sans-serif;
-  
+ 
  text-transform: uppercase;
  text-align: center;
   
-  background-color: #ffffff
+ background-color: #ffffff
     
 }
 
@@ -35,13 +36,12 @@ a {
 }
 
 .main-navigation {
-  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   line-height: 26px;
-  
-  color: #000000;
-  
-  background-color: #ffffff;
-  
+  color: #000000; 
+  background-color: #ffffff;  
 }
 
 .site-navigation {
@@ -53,12 +53,17 @@ a {
 }
 
 .intro {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 .intro-2 {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 26px;
 }
@@ -67,42 +72,77 @@ a {
   list-style: none;
 }
 
-.item-1,
-.item-2 {
-  color: #ffffff;
-  
+.features-item-1,
+.features-item-2 {
+  color: #ffffff;  
   background-color: #81b3d2;
+}
+
+.features-item-1 h3,
+.features-item-2 h3 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+ 
+  line-height: 26px;
+  
+  color: #ffffff;
 }
 
 .unnumbered {
   list-style: none;
-}
-
-.item-1 h3,
-.item-2 h3 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
   
-  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  
+  background-color: #ffffff;
+  
+  display: flex;
+  flex-wrap: wrap;
+  height: 256px;
+  justify-content: space-around;
+  align-items: center; 
+  
 }
 
-.items-3-4-5 {
+
+.unnumbered h4 {
+  font-weight: 700;
+}
+
+.features-item-3,
+.features-item-4,
+.features-item-5 {
+  color: #000000;  
   background-color: #eeeeee;
+  
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-.items-3-4-5 h3 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  
+.features-item-3 h3
+.features-item-4 h3
+.features-item-3 h3 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px; 
+  line-height: 26px; 
   color: #000000;
 }
 
 .footer-item-1 {
-  font-size: 21px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px; 
   line-height: 26px;
-  font-weight: bold;
 }
  
 .footer-item-2 {
@@ -111,7 +151,6 @@ a {
 }
 
 .social-icons {
-  list-style: none;
-  
+  list-style: none;  
 }
 
