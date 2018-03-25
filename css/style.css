@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("..fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -15,11 +15,9 @@
 
 body{
  margin: 0;
- padding-left: 39px;
- padding-right: 39px;
+ padding: 0;
   
  min-width: 800px;
- min-height: 1200;
   
  font-family: "PT Sans", Arial, sans-serif;
  font-weight: 400;
@@ -88,13 +86,22 @@ a {
   justify-content: space-around;
 }
 
-.site-navigation a {color: #000000;}
 
-.main-navigation a:link {text-decoration: none;}
-.main-navigation a:hover {color: #99c1db;}
-.main-navigation a:active {color: #b2b2b2;}
+.site-navigation a {
+  color: #000000;
+}
 
-.current-item {color: #756357;}
+.main-navigation a:link {
+  text-decoration: none;
+}
+.main-navigation a:hover {
+  color: #99c1db;
+}
+.main-navigation a:active {
+  color: #b2b2b2;
+}
+
+.site-navigation a.current-item {color: #756357;}
 
 
 .sort {
@@ -155,9 +162,6 @@ a.rdown:active {
   color: #000000;
 }
 
-/*--bottom--
-
-*/
 
 .intro {
   font-family: "PT Sans";
@@ -193,7 +197,6 @@ a.rdown:active {
   justify-content: flex-start;
 }
 
-.
 .features-item-1,
 .features-item-2 {
   color: #ffffff;  
@@ -228,9 +231,7 @@ a.rdown:active {
   flex-wrap: wrap;
   height: 256px;
   justify-content: space-around;
-  align-items: center; 
-
-  
+  align-items: center;  
 }
 
 
@@ -241,22 +242,102 @@ a.rdown:active {
 .features-item-3,
 .features-item-4,
 .features-item-5 {
+  list-style: none;
+  
   color: #000000;  
-  background-color: #eeeeee;
-  
-
-  
+  background-color: #eeeeee; 
 }
 
 .features-item-3 h3
 .features-item-4 h3
 .features-item-3 h3 {
+  text-decoration: none; 
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   font-size: 21px; 
   line-height: 26px; 
   color: #000000;
+}
+
+.hotels-search-item,
+.hotels-search-item-1,
+.hotels-search-item-2,
+.hotels-search-item-3,
+.hotels-search-item-4 {
+  font-family: "PT Sans"; 
+  font-weight: 700;
+  line-height: 26px; 
+}
+
+.hotels-search span {
+ width: 568px;
+ height: 86px;
+ background-color: #766257;
+}
+
+.hotels-search-item a {
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.hotels-search-item a:hover {
+ color: #ffffff;
+ background-color: #604e44;
+}
+
+.hotels-search-item a:active {
+  color: #867971;
+  background-color: #503e34;
+}
+
+.hotels-search input {
+  height: 38px;
+  width: 346px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.hotels-search input:hover {
+  background-color: #ebebeb;
+}
+
+.hotels-search input:focus {
+  background-color: #ffffff;
+  border-width: 2px; 
+  border-color: #e5e5e5;
+  border-style: solid;
+}
+
+button {
+  color: #a9a9a9;
+  border: none;
+  background-color: #f2f2f2;
+  
+  width: 38px;
+  height:  38px;
+}
+button:hover{
+  color: #000000;
+}
+button:active {
+  color: #81b2d3;
+}
+
+button .search {
+  width: 456px;
+  height: 58px;
+  
+  color: #ffffff;
+  text-transform: uppercase;
+  
+  background-color: #81b3d2;
+}
+button .search:hover {
+  background-color: #669ec1;
+}
+button .search:active {
+  color: #6da5c6;
+  background-color: #5596be;
 }
 
 .footer-item-1 {
@@ -276,5 +357,4 @@ a.rdown:active {
   list-style: none;  
 }
 
-/*--сеточные стили--*/
 
