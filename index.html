@@ -86,10 +86,38 @@
       <div class="feedback">
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        
+<form class="hotels-search" method="get">
+  <span class="hotels-search-item">
+    <a href="catalog.html">Поиск гостиницы в Седоне</a>
+  </span>
+  <p class="hotels-search-item-1">
+    <lable for="arrival">Дата заезда:</lable>
+    <input id="arrival" type="text" name="date" placeholder="24 апреля 2017">
+    <button type="submit"><img src="img/calendar.svg"></button>
+  </p>
+  <p class="hotels-search-item-2">
+    <lable for="departure">Дата выезда:</lable>
+    <input id="departure" type="text" name="date" placeholder="4 июля 2017">
+    <button type="submit"><img src="img/calendar.svg"></button>
+  </p>
+  <p class="hotels-search-item-3">
+    <lable for="adults">Взрослые:</lable>
+    <button type="submit">-</button>
+    <input id="adults" type="text" name="number" placeholder="2">
+    <button type="submit">+</button>
+  </p>
+  <p class="hotels-search-item-4">
+    <lable for="adults">Дети:</lable>
+    <button type="submit">-</button>
+    <input id="children" type="text" name="number" placeholder="0">
+    <button type="submit">+</button>
+  </p>
+    <button class="search" type="submit">Найти</button> 
+   </form>
         <a href="https://www.google.ru/maps/place/Седона,+Аризона+86336,+США/@34.8543734,-111.8301578,13z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896?hl=ru">
         <img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
         </a>
-        <!--форма ввода-->
       </div>
     </main>
     <footer>
