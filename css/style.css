@@ -13,9 +13,13 @@
 }
 
 
-body {
+body{
  margin: 0;
- padding: 0;
+ padding-left: 39px;
+ padding-right: 39px;
+  
+ min-width: 800px;
+ min-height: 1200;
   
  font-family: "PT Sans", Arial, sans-serif;
  font-weight: 400;
@@ -28,29 +32,132 @@ body {
  text-align: center;
   
  background-color: #ffffff
-    
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 a {
   text-decoration: none;
 }
 
-.main-navigation {
+/*
+.inner-page {
+  margin: 0;
+  padding-left: 39px;
+  padding-right: 39px;
+  
+  min-width: 800px;
+  min-height: 1200;
+  
+ font-family: "PT Sans", Arial, sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: 14px;
+ line-height: 21px;
+ color: #000000;
+ 
+ text-transform: uppercase;
+ text-align: center;
+  
+ background-color: #ffffff
+}
+.inner-page a {
+  text-decoration: none;
+}
+*/
+
+.site-navigation {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 26px;
   color: #000000; 
-  background-color: #ffffff;  
+  background-color: #ffffff;
+  
+  list-style: none;
+  
+  height: 55px;
+  
+  display: flex;
+  justify-content: space-around;
 }
 
-.site-navigation {
+.site-navigation a {color: #000000;}
+
+.main-navigation a:link {text-decoration: none;}
+.main-navigation a:hover {color: #99c1db;}
+.main-navigation a:active {color: #b2b2b2;}
+
+.current-item {color: #756357;}
+
+
+.sort {
   list-style: none;
 }
+.sort a {
+  text-decoration: none;
+  color: #b2b2b2;
+  border-bottom: 1px dashed #99c1db;
+}
 
-.site-navigation a {
+.sort a:hover {
+  text-decoration: none;
+  color: #99c1db;
+  border-bottom: 1px dashed #99c1db;
+}
+
+.sort a:active {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: none;
+}
+
+
+a.rise:link {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+a.rise:hover {
+  text-decoration: none;
   color: #000000;
 }
+
+a.rise:active {
+  text-decoration: none;
+  color: #99c1db;
+}
+
+a.down:link {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+a.down:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+a.rdown:active {
+  text-decoration: none;
+  color: #99c1db;
+}
+
+.list-of-hotels {
+  list-style: none;
+}
+.list-of-hotels a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*--bottom--
+
+*/
 
 .intro {
   font-family: "PT Sans";
@@ -68,10 +175,25 @@ a {
   line-height: 26px;
 }
 
-.features-list {
+.features-item-1 {
   list-style: none;
+     
+  margin-top: 56px;
+  margin-bottom: 61px;
+  
+  padding-top: 46px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 59px;
+  
+  min-height: 256px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+.
 .features-item-1,
 .features-item-2 {
   color: #ffffff;  
@@ -107,6 +229,7 @@ a {
   height: 256px;
   justify-content: space-around;
   align-items: center; 
+
   
 }
 
@@ -121,8 +244,7 @@ a {
   color: #000000;  
   background-color: #eeeeee;
   
-  display: flex;
-  justify-content: space-around;
+
   
 }
 
@@ -153,4 +275,6 @@ a {
 .social-icons {
   list-style: none;  
 }
+
+/*--сеточные стили--*/
 
