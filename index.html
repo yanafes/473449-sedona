@@ -32,27 +32,27 @@
         </p>
         <p class="intro-2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <ol class="features-list">
-            <li class="features-item-1">
+            <li class="features-item">
               <h3>Настоящий городок</h3>
               <span>-№1-</span>
               <p>Седона-не аттракцион для туристов,
               там течет своя жизнь
             </p>
-            <img src="img/Sedona-is-real-town.jpg" class="right" width="800" height="256" alt="Настоящий городок Седона">
+            <img src="img/sedona-is-real-town.jpg" class="right" width="800" height="256" alt="Настоящий городок Седона">
                <ul class="unnumbered">
-              <li class="unnumbered-item-1">
+              <li class="unnumbered-item">
                 <h4>Жилье</h4>
                 <p>Рекомендуем пожить в настоящем
                   мотеле, все как в кино!
                 </p>
               </li>
-              <li class="unnumbered-item-2">
+              <li class="unnumbered-item">
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер.
                   Вы не разочаруетесь!
                 </p>
               </li>
-              <li class="unnumbered-item-3">
+              <li class="unnumbered-item">
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного
                   производства
@@ -60,23 +60,23 @@
               </li>
           </ul>
           </li>
-          <li class="features-item-2">
+          <li class="features-item">
             <h3>Там есть мост дьявола</h3>
             <span>-№2-</span>
             <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
-            <img src="img/Devil's-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+            <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
           </li>
-          <li class="features-item-3">
+          <li class="features-bottom-item">
               <h3>Небольшая площадь</h3>
               <span>-№3-</span>
               <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="features-item-4">
+          <li class="features-bottom-item">
             <h3>Красивая дорога</h3>
             <span>-№4-</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="features-item-5">
+          <li class="features-bottom-item">
             <h3>Мало туристов</h3>
             <span>-№5-</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -86,34 +86,39 @@
       <div class="feedback">
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        
-<form class="hotels-search" method="get">
-  <span class="hotels-search-item">
-    <a href="catalog.html">Поиск гостиницы в Седоне</a>
-  </span>
-  <p class="hotels-search-item-1">
+        <p class="search">
+          <a href="catalog.html">Поиск гостиницы в Седоне</a>
+        </p>
+        <form class="hotels-search" method="get" action="">
+  <p class="hotels-search-item">
     <lable for="arrival">Дата заезда:</lable>
     <input id="arrival" type="text" name="date" placeholder="24 апреля 2017">
-    <button type="submit"><img src="img/calendar.svg"></button>
+    <button type="button">
+      <span class="visually-hidden">Выбор даты заезда</span>
+     <!-- <svg width="21" height="22"></svg> -->
+    </button>
   </p>
-  <p class="hotels-search-item-2">
+  <p class="hotels-search-item">
     <lable for="departure">Дата выезда:</lable>
     <input id="departure" type="text" name="date" placeholder="4 июля 2017">
-    <button type="submit"><img src="img/calendar.svg"></button>
+    <button type="button">
+      <span class="visually-hidden">Выбор даты выезада</span>
+     <!-- <svg width="21" height="22"></svg> -->
+        </button>
   </p>
-  <p class="hotels-search-item-3">
+  <p class="hotels-search-item">
     <lable for="adults">Взрослые:</lable>
-    <button type="submit">-</button>
+    <button type="button"><span class="visually-hidden">Минус</span> - </button>
     <input id="adults" type="text" name="number" placeholder="2">
-    <button type="submit">+</button>
+    <button type="button"><span class="visually-hidden">Плюс</span>+</button>
   </p>
-  <p class="hotels-search-item-4">
+  <p class="hotels-search-item">
     <lable for="adults">Дети:</lable>
-    <button type="submit">-</button>
+    <button type="button"><span class="visually-hidden">Минус</span>-</button>
     <input id="children" type="text" name="number" placeholder="0">
-    <button type="submit">+</button>
+    <button type="button"><span class="visually-hidden">Плюс</span>+</button>
   </p>
-    <button class="search" type="submit">Найти</button> 
+    <button class="find" type="submit">Найти</button> 
    </form>
         <a href="https://www.google.ru/maps/place/Седона,+Аризона+86336,+США/@34.8543734,-111.8301578,13z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896?hl=ru">
         <img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
