@@ -20,6 +20,54 @@
       </nav>
     </header>
     <main>
+      <form class="filter" method="get" action="">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-of-pool" checked>
+                <label for="filter-of-pool">
+                  Бассейн
+                </label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-of-parking">
+                <label for="filter-of-parking">
+                  Парковка
+                </label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="filter-of-wi-fi" checked>
+                <label for="filter-of-wi-fi">
+                  Wi-fi
+                </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-of-hotel" checked>
+                <label for="filter-of-hotel">
+                  Гостиница
+                </label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-of-motel" checked>
+                <label for="filter-of-motel">
+                  Мотель
+                </label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-of-apartments" checked>
+                <label for="filter-of-apartments">
+                  Апартаменты
+                </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
       <h1 class="visually-hidden">Каталог</h1>
       <section class="hotels">
         <div class="sort">
