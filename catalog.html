@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <form class="filter" method="get" action="">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -68,6 +68,21 @@
           </ul>
         </fieldset>
       </form>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
       <h1 class="visually-hidden">Каталог</h1>
       <section class="hotels">
         <div class="sort">
