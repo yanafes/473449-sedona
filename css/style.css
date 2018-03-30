@@ -9,7 +9,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
 }
 
 
@@ -105,15 +105,65 @@ a.current-item {
   color: #756357;
 }
 
-.forms {
-  background-image: url('img/filter%20background.jpg');
+/*тут начинаются проблемы с расположением*/
+.catalogs-forms {
+  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  height: 217px;
+  
+  background-image: url(..//img/filter%20background.jpg);
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
 }
+
+legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.infrastructure,
+.living-type {  
+  /*если прописать размеры здесь, то все будет очень плохо
+  width: 139px;
+  height: 155px;
+  */
+  
+  list-style-type: none;
+  border: none;
+  text-align: left;
+}
+
+.list-of-hotels {
+  
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.list-of-hotels a {
+  text-decoration: none;
+  color: #000000;
+}
+/*тут заканчивается*/
+
 
 .filter-range {
   width: 330px;
-  margin: 50px;
-  
-  background-image: url(..//img/filter%20background.jpg)
+  margin: 50px;  
 }
 
 .filter-range-title {
@@ -244,7 +294,30 @@ a.current-item {
 }
 
 .sort {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sort-header {
+  padding-left: 72px;
+  padding-right: 49px;
+  
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.sorting li {
+  padding-right: 33px;
   list-style: none;
+   display: inline;
 }
 .sort a {
   text-decoration: none;
@@ -292,15 +365,6 @@ down:active {
   text-decoration: none;
   color: #99c1db;
 }
-
-.list-of-hotels {
-  list-style: none;
-}
-.list-of-hotels a {
-  text-decoration: none;
-  color: #000000;
-}
-
 
 .intro {
   font-family: "PT Sans";
@@ -394,6 +458,7 @@ down:active {
 .hotels-search {
   margin-left: 316px;
   margin-right: 316px;
+  padding-right: 55px;
   width: 568px;
   height: 395px;
   text-align: center;
@@ -403,7 +468,8 @@ down:active {
 .hotels-search-item {
   font-family: "PT Sans"; 
   font-weight: 700;
-  line-height: 26px; 
+  line-height: 26px;
+  margin-right: 41px;
 }
 
 .search {
@@ -416,20 +482,19 @@ down:active {
 }
   
   .search a{
+  display: block;
   margin-top: 52px;
   margin-bottom: 55px;
   margin-left: 316px;
   margin-right: 316px;
   
   padding-top: 35px;
-  padding-right: 139px;
   padding-bottom: 33px;
-  padding-left: 140px;
   
   width: 568px;
-  height: 86px;
   background-color: #766257;
   text-align: center;
+
 
   text-decoration: none;
   color: #ffffff;
@@ -458,6 +523,7 @@ down:active {
 }
 
 input {
+  margin-left: 21px;
   height: 38px;
   width: 270px;
   border-style: none;
@@ -475,6 +541,8 @@ input:focus {
   border-style: solid;
 }
 input.numbers {
+  margin: 0;
+  
   height: 38px;
   width: 38px;
   text-align: center;
@@ -495,6 +563,7 @@ input.numbers {
 
 .symbol-minus {
   margin-right: -4px;
+  margin-left: 39px;
 }
 .symbol-plus {
   margin-left: -4px;
@@ -540,10 +609,24 @@ button.find:active {
   background-color: #5596be;
 }
 
+/*footer*/
+footer {
+  height: 120px;
+  padding-left: 132px;
+  padding-right: 101px;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  opacity: 0.9;
+
+}
+
 .footer-item-1 {
   font-family: "PT Sans";
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   font-size: 21px; 
   line-height: 26px;
 }
@@ -554,11 +637,44 @@ button.find:active {
 }
 
 .social-icons-item {
-  list-style-type: none;  
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  padding-right: 14px;
+  width: 46px;
+  height: 48px;
+  
+  margin-right: 6px;
+    
+  list-style-type: none; 
+  display: inline;
+  background-color: #81b3d2;
 }
 
-.logo-htmlacademy{
+
+.social-icons-item:hover {
+  background-color: #669ec0;
+}
+.social-icons-item:active {
+  background-color: #5496bd;  
+}
+
+.twitter-item:active {
+  fill: #88b6d1;
+}
+.facebook-item:active {
+  fill: #88b6d1;
+}
+.youtube-item:active {
+  fill: #88b6d1;
+}
+
   
+.htmlacademy-logo:hover {
+  fill: #81b3d2;
+}
+.htmlacademy-logo:active {
+  fill: #c9c8c8;
 }
 
 
