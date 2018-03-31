@@ -41,24 +41,29 @@ body{
 
 a {
   text-decoration: none;
-  display: inline;
+  display: inline-block;
 }
 
 .main-header {
   position:relative;
+ 
+}
+.main-navigation {
+  position: absolute;
+
 }
 .logo {
+  display: inline-block;
   position: absolute;
   left: 50%;
   margin-left: -69px;
   margin-top: 0;
   
-  display: block;
+  display: inline-block;
 }
 .site-navigation {
   margin: 0;
-  padding: 31px; 0;
-  position: absolute;
+  padding-right: 73px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 73px;
