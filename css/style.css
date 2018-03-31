@@ -12,7 +12,7 @@
   font-style: bold;
 }
 
-
+/*общие стили*/
 body{
  margin: 0 auto;
  padding: 0;
@@ -44,6 +44,8 @@ a {
   display: inline-block;
 }
 
+
+/*хэдэр*/
 .main-header {
   position:relative;
   z-index: 1;
@@ -68,11 +70,11 @@ a {
   color: #000000; 
   background-color: #ffffff;
  
-  
   list-style: none;
   
   display: flex;
 }
+
 .logo {
   display: inline-block;
   position: absolute;
@@ -107,28 +109,177 @@ a {
   color: #b2b2b2;
 }
 
+a.current-item {
+  color: #756357;
+}
+
+
+/*фотo с горами*/
 .representation {
+  position: relative;
   height: 565px;
   overflow: hidden;
 }
-.representation:after {
+.representation::after {
+  position: absolute;
+  content: " ";
   background-image: url(../img/shape.png);
-  width: auto;
-  height: 57px;
+  
   display: block;
 }
 .sedona-photo {
-  position: relative;
+  position: absolute;
   top: -28px;
   margin: 0;
   padding: 0;
   display: inline-block;   
 }
 
-a.current-item {
-  color: #756357;
+/*блок ниже гор*/
+.features-conteiner {
+  position: relative;
+  margin: 0;
+  height: 216px;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 56px;
+}
+.intro {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  padding-left: 380px;
+  padding-right: 380px; 
 }
 
+.intro-2 {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+  
+  padding-left: 356px;
+  padding-right: 356px;
+}
+
+/*основной список преимуществ*/
+.features-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.features-item-1 {
+  height: 400px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 59px;
+
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+
+.features-item-2 {
+  height: 400px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 59px;
+
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.features-item h3 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+ 
+  line-height: 26px;
+  
+  color: #ffffff;
+}
+
+.unnumbered-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  list-style: none;
+  text-align: center;
+}
+
+.unnumbered h4 {
+  font-weight: 700;
+}
+
+.features-bottom-item {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  
+  margin: 0;
+  max-width: 262px;
+  height: 256px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  padding-left: 69px;
+  padding-right: 69px;
+
+  position: relative;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.unnumbered-list li:nth-of-type(1){
+  padding-left: 95px;
+  padding-right: 57px;
+}
+
+.features-bottom-item h3 {
+  text-decoration: none; 
+  font-family: "PT Sans";
+  font-weight: 600;
+  font-size: 21px; 
+  line-height: 26px; 
+  color: #000000;
+}
+
+/*фильтры в каталоге*/
 .filter {
   
   font-family: "PT Sans", Arial, sans-serif;
@@ -404,96 +555,8 @@ down:active {
   color: #99c1db;
 }
 
-.intro {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 21px;
-  line-height: 26px;
-}
 
-.intro-2 {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.features-item {
-  list-style: none;
-     
-  margin-top: 56px;
-  margin-bottom: 61px;
-  
-  padding-top: 46px;
-  padding-bottom: 64px;
-  padding-left: 60px;
-  padding-right: 59px;
-  
-  min-height: 256px;
-}
-.all-features {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  color: #ffffff;  
-  background-color: #81b3d2;
-}
-
-.features-item h3 {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 21px;
- 
-  line-height: 26px;
-  
-  color: #ffffff;
-}
-
-.unnumbered {
-  list-style: none;
-  
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-  
-  background-color: #ffffff;
-  
-  display: flex;
-  flex-wrap: wrap;
-  height: 256px;
-  justify-content: space-around;
-  align-items: center;  
-}
-
-
-.unnumbered h4 {
-  font-weight: 700;
-}
-
-.features-bottom-item {
-  list-style: none;
-  
-  color: #000000;  
-  background-color: #eeeeee; 
-}
-
-.features-bottom-item h3 {
-  text-decoration: none; 
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 21px; 
-  line-height: 26px; 
-  color: #000000;
-}
-
+/*форма на главной*/
 .hotels-search {
   margin-left: 316px;
   margin-right: 316px;
