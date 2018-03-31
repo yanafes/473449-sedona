@@ -105,8 +105,7 @@ a.current-item {
   color: #756357;
 }
 
-/*тут начинаются проблемы с расположением*/
-.catalogs-forms {
+.filter {
   
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
@@ -125,25 +124,41 @@ a.current-item {
 
 }
 
-legend {
+.filter legend {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
 }
 
-.infrastructure,
-.living-type {  
-  /*если прописать размеры здесь, то все будет очень плохо
-  width: 139px;
-  height: 155px;
-  */
-  
-  list-style-type: none;
-  border: none;
-  text-align: left;
+.filter ul {
+  list-style: none;
 }
 
+.filter-checkbox { 
+  width: 21px;
+  height: 21px;
+  border: 2px solid #ffffff;
+ 
+  }
+
+}
+.filter-checkbox:disabled {
+  border-color: #6a6a6a;
+}
+
+.infrastructure,
+.living-type {  
+ 
+  width: 139px;
+  height: 155px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+/*hotels*/
 .list-of-hotels {
   
   list-style: none;
@@ -158,7 +173,6 @@ legend {
   text-decoration: none;
   color: #000000;
 }
-/*тут заканчивается*/
 
 
 .filter-range {
@@ -394,7 +408,8 @@ down:active {
   padding-right: 59px;
   
   min-height: 256px;
-  
+}
+.all-features {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
