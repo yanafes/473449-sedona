@@ -14,10 +14,10 @@
 
 
 body{
- margin: 0;
+ margin: 0 auto;
  padding: 0;
   
- min-width: 1200px;
+ width: 1200px;
   
  font-family: "PT Sans", Arial, sans-serif;
  font-weight: 400;
@@ -80,7 +80,7 @@ a {
   
   list-style: none;
   
-  height: 55px;
+ 
   
   display: flex;
   justify-content: space-around;
@@ -135,7 +135,7 @@ a.current-item {
   list-style: none;
 }
 
-.filter-checkbox { 
+.filter-input { 
   width: 21px;
   height: 21px;
   border: 2px solid #ffffff;
