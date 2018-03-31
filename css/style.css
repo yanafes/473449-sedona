@@ -27,7 +27,6 @@ body{
  color: #000000;
  
  text-transform: uppercase;
- text-align: center;
   
  background-color: #ffffff
 }
@@ -42,35 +41,28 @@ body{
 
 a {
   text-decoration: none;
+  display: inline;
 }
 
-/*
-.inner-page {
-  margin: 0;
-  padding-left: 39px;
-  padding-right: 39px;
-  
-  min-width: 800px;
-  min-height: 1200;
-  
- font-family: "PT Sans", Arial, sans-serif;
- font-weight: 400;
- font-style: normal;
- font-size: 14px;
- line-height: 21px;
- color: #000000;
- 
- text-transform: uppercase;
- text-align: center;
-  
- background-color: #ffffff
+.main-header {
+  position:relative;
 }
-.inner-page a {
-  text-decoration: none;
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  margin-top: 0;
+  
+  display: block;
 }
-*/
-
 .site-navigation {
+  margin: 0;
+  padding: 31px; 0;
+  position: absolute;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 73px;
+  
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -80,15 +72,18 @@ a {
   
   list-style: none;
   
- 
-  
   display: flex;
-  justify-content: space-around;
 }
-
 
 .site-navigation a {
   color: #000000;
+}
+.site-navigation li {
+  width: 240px;
+}
+.site-navigation li:nth-of-type(3),
+.site-navigation li:nth-of-type(4) {
+  text-align: right;
 }
 
 .main-navigation a {
