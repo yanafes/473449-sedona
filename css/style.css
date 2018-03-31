@@ -52,16 +52,10 @@ a {
   position: absolute;
 
 }
-.logo {
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  margin-left: -69px;
-  margin-top: 0;
-  
-  display: inline-block;
-}
+
 .site-navigation {
+  width: 100%;
+  box-sizing: border-box;
   margin: 0;
   padding-right: 73px;
   padding-top: 15px;
@@ -79,12 +73,24 @@ a {
   
   display: flex;
 }
+.logo {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  margin-top: 0;
+  z-index: 1;
+}
 
 .site-navigation a {
   color: #000000;
 }
 .site-navigation li {
   width: 240px;
+}
+.site-navigation li:nth-of-type(3) {
+  margin-left: auto;
+  padding-left: 95px;
 }
 .site-navigation li:nth-of-type(3),
 .site-navigation li:nth-of-type(4) {
