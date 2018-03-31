@@ -26,19 +26,20 @@
           <legend>Инфраструктура:</legend>
           <ul class="infrastructure">
             <li>
-              <input type="checkbox" name="pool" id="filter-of-pool" checked>
+              <input class="filter-checkbox" type="checkbox" name="pool" id="filter-of-pool" checked>
+              <span class="checkbox"></span>
                 <label for="filter-of-pool">
                   Бассейн
                 </label>
             </li>
             <li>
-              <input type="checkbox" name="parking" id="filter-of-parking">
+              <input class="filter-checkbox" type="checkbox" name="parking" id="filter-of-parking">
                 <label for="filter-of-parking">
                   Парковка
                 </label>
             </li>
             <li>
-              <input type="checkbox" name="wi-fi" id="filter-of-wi-fi" checked>
+              <input class="filter-checkbox" type="checkbox" name="wi-fi" id="filter-of-wi-fi" checked>
                 <label for="filter-of-wi-fi">
                   Wi-fi
                 </label>
@@ -49,27 +50,26 @@
           <legend>Тип жилья:</legend>
           <ul class="living-type">
             <li>
-              <input type="checkbox" name="hotel" id="filter-of-hotel" checked>
+              <input class="filter-checkbox" type="checkbox" name="hotel" id="filter-of-hotel" checked>
                 <label for="filter-of-hotel">
                   Гостиница
                 </label>
             </li>
             <li>
-              <input type="checkbox" name="motel" id="filter-of-motel" checked>
+              <input class="filter-checkbox" type="checkbox" name="motel" id="filter-of-motel" checked>
                 <label for="filter-of-motel">
                   Мотель
                 </label>
             </li>
             <li>
-              <input type="checkbox" name="apartments" id="filter-of-apartments" checked>
+              <input class="filter-checkbox" type="checkbox" name="apartments" id="filter-of-apartments" checked>
                 <label for="filter-of-apartments">
                   Апартаменты
                 </label>
             </li>
           </ul>
         </fieldset>
-      </form>
-      <div class="filter-range">
+           <div class="filter-range">
         <div class="filter-range-title">Стоимость в сутки (р):</div>
       <div class="price-controls">
         <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -84,6 +84,7 @@
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
     </div>
+      </form>
       </div>
       <h1 class="visually-hidden">Каталог</h1>
       <section class="hotels">
