@@ -46,11 +46,10 @@ a {
 
 .main-header {
   position:relative;
- 
+  z-index: 1;
 }
 .main-navigation {
   position: absolute;
-
 }
 
 .site-navigation {
@@ -68,6 +67,7 @@ a {
   line-height: 26px;
   color: #000000; 
   background-color: #ffffff;
+ 
   
   list-style: none;
   
@@ -105,6 +105,24 @@ a {
 }
 .main-navigation a:active {
   color: #b2b2b2;
+}
+
+.representation {
+  height: 565px;
+  overflow: hidden;
+}
+.representation:after {
+  background-image: url(../img/shape.png);
+  width: auto;
+  height: 57px;
+  display: block;
+}
+.sedona-photo {
+  position: relative;
+  top: -28px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;   
 }
 
 a.current-item {
