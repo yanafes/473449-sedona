@@ -1,16 +1,3 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: bold;
-}
 
 /*общие стили*/
 body{
@@ -19,7 +6,7 @@ body{
   
  width: 1200px;
   
- font-family: "PT Sans", Arial, sans-serif;
+ font-family: "PT Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
  font-size: 14px;
@@ -28,7 +15,8 @@ body{
  
  text-transform: uppercase;
   
- background-color: #ffffff
+ background-color: #f0f0f0;
+ box-shadow: 0 0 40px;
 }
 
 .visually-hidden {
@@ -63,7 +51,7 @@ a {
   padding-bottom: 15px;
   padding-left: 73px;
   
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 26px;
@@ -122,6 +110,10 @@ a.current-item {
 }
 .representation::after {
   position: absolute;
+  bottom: 0;
+  
+  width: 1200px;
+  height: 57px;
   content: " ";
   background-image: url(../img/shape.png);
   
@@ -139,21 +131,22 @@ a.current-item {
 .features-conteiner {
   position: relative;
   margin: 0;
-  height: 216px;
+  padding-top: 36px;
+  padding-bottom: 46px;
+  padding-left: 355px;
+  padding-right: 356px;
+
   text-align: center;
-  padding-top: 38px;
-  padding-bottom: 56px;
+  background-color: #ffffff;
   
 }
 .intro {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 600;
   font-style: bold;
   font-size: 21px;
   line-height: 26px;
   
-  padding-left: 360px;
-  padding-right: 360px; 
 }
 
 .intro-2 {
@@ -162,39 +155,32 @@ a.current-item {
   font-style: normal;
   font-size: 14px;
   line-height: 26px;
-  
-  padding-left: 356px;
-  padding-right: 356px;
-  padding-top: 5px;
 }
 
 /*основной список преимуществ*/
 .features-list {
   position: relative;
-  margin-top: -95px;
-  padding: 0;
+  margin: 0;
+  padding: 0px;
   
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
  
   
   list-style: none;
 
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
 }
 
-.features-item-1{
+.features-item-1 {
   position: relative;
-  
   width: 256px;
-  height: 400px;
-  padding-right: 72px;
   padding-left: 72px;
-
+  padding-right: 72px;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2; 
@@ -203,7 +189,6 @@ a.current-item {
 .features-item-2 {
   position: relative;
   width: 256px;
-  height: 400px;
 
   padding-left: 72px;
   padding-right: 72px;
@@ -231,14 +216,11 @@ a.current-item {
 
 .unnumbered-list {
   position: relative;
-  padding: 0;
-  margin-top: -145px;
-  margin-bottom: 60px;
 
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   color: #000000;
   background-color: #ffffff;
   list-style: none;
@@ -247,30 +229,25 @@ a.current-item {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content:space-around;
+
 }
 
 .unnumbered-item-1 {
   position: relative;
-  padding-left: 53px;
-  padding-right: 53px;
-  margin-top: 60px;
+  justify-content: center;
+  text-align: center;
 }
 
 .unnumbered-item-2 {
   position: relative; 
-  padding-left: 53px;
-  padding-right: 53px;
-  margin-top: 60px;
+
 }
 
 .unnumbered-item-3 {
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 56px;
+
 }
-.unnumbered-item h3 {
+.unnumbered-list h4 {
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
@@ -284,10 +261,9 @@ a.current-item {
   font-size: 14px;
   line-height: 26px;
   
-  margin-top: -143px;
   width: 262px;
-  height: 210px;
-  padding-top: 50px;
+  min-height: 210px;
+  padding-top: 22px;
   padding-left: 69px;
   padding-right: 69px;
 
@@ -304,19 +280,16 @@ a.current-item {
   font-size: 21px; 
   line-height: 26px; 
   color: #000000;
+  
 }
 
 .feedback-item {
   position: relative;
-  width: 291px;
-  margin-left: 70px;
-  margin-top: 48px;
-  padding-left: 383px;
-  padding-right: 383px;
   text-align: center;
+  background-color: #ffffff;
 }
 .feedback-item b {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 30px;
@@ -325,7 +298,7 @@ a.current-item {
 }
 
 .feedback-item p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -335,14 +308,15 @@ a.current-item {
 
 /*фильтры в каталоге*/
 .filter {
+  position: relative;
+  padding: 0;
   
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-  height: 217px;
   
   background-image: url(..//img/filter%20background.jpg);
   background-repeat: no-repeat;
@@ -354,7 +328,7 @@ a.current-item {
 }
 
 .filter legend {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -362,26 +336,24 @@ a.current-item {
 
 .filter ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.filter-input { 
-  width: 21px;
-  height: 21px;
+.checkbox {
+  display: none;
+}
+.checkbox-custom {
+  position: relative;
+  width: 25px;
+  height: 25px;
   border: 2px solid #ffffff;
- 
-  }
-
 }
-.filter-checkbox:disabled {
-  border-color: #6a6a6a;
+.checkbox-custom,
+.infrastructure {
+  display: inline-block;
 }
 
-.infrastructure,
-.living-type {  
- 
-  width: 139px;
-  height: 155px;
-}
 
 .filter fieldset {
   border: none;
@@ -613,11 +585,8 @@ down:active {
 /*форма на главной*/
 .hotels-search {
   position: relative;
-  margin-top: -40px;
-  margin-left: 316px;
-  padding-top: 42px;
   width: 568px;
-  height: 395px;
+  min-height: 395px;
   text-align: center;
   
   background-color: #ffffff;
@@ -626,7 +595,7 @@ down:active {
 }
 .hotels-search-item,
 .letters {
-  font-family: "PT Sans", Arial, sans-serif; 
+  font-family: "PT Sans", sans-serif; 
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
@@ -635,7 +604,6 @@ down:active {
 
 .search {
   position: relative;
-  margin-top: -24px;
   text-decoration: none; 
   font-family: "PT Sans";
   font-weight: 700;
@@ -789,10 +757,7 @@ button.find:active {
 /*footer*/
 footer {
   position: relative;
-  margin-top: -520px;
-  height: 120px;
-  padding-left: 132px;
-  padding-right: 101px;
+ 
   
   display: flex;
   justify-content: space-around;
