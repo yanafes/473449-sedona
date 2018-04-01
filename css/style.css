@@ -141,17 +141,19 @@ a.current-item {
   margin: 0;
   height: 216px;
   text-align: center;
-  padding-top: 61px;
+  padding-top: 38px;
   padding-bottom: 56px;
+  
 }
 .intro {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-style: bold;
   font-size: 21px;
   line-height: 26px;
-  padding-left: 380px;
-  padding-right: 380px; 
+  
+  padding-left: 360px;
+  padding-right: 360px; 
 }
 
 .intro-2 {
@@ -163,86 +165,117 @@ a.current-item {
   
   padding-left: 356px;
   padding-right: 356px;
+  padding-top: 5px;
 }
 
 /*основной список преимуществ*/
 .features-list {
   position: relative;
-  margin: 0;
+  margin-top: -95px;
   padding: 0;
+  
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+ 
   
   list-style: none;
-  text-align: center;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.features-item-1 {
-  height: 400px;
-  padding-top: 46px;
-  padding-bottom: 64px;
-  padding-left: 60px;
-  padding-right: 59px;
-
+.features-item-1{
   position: relative;
+  
+  width: 256px;
+  height: 400px;
+  padding-right: 72px;
+  padding-left: 72px;
+
   text-align: center;
   color: #ffffff;
-  background-color: #81b3d2;
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  
+  background-color: #81b3d2; 
 }
 
 .features-item-2 {
-  height: 400px;
-  padding-top: 46px;
-  padding-bottom: 64px;
-  padding-left: 60px;
-  padding-right: 59px;
-
   position: relative;
+  width: 256px;
+  height: 400px;
+
+  padding-left: 72px;
+  padding-right: 72px;
+
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
-.features-item h3 {
+
+.features-item-1 h3,
+.features-item-2 h3 {
   font-family: "PT Sans";
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-size: 21px;
- 
-  line-height: 26px;
-  
+  line-height: 21px;
   color: #ffffff;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 23px;
 }
+
 
 .unnumbered-list {
   position: relative;
-  margin: 0;
   padding: 0;
+  margin-top: -145px;
+  margin-bottom: 60px;
+
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff;
   list-style: none;
   text-align: center;
+  
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content:space-around;
 }
 
-.unnumbered h4 {
+.unnumbered-item-1 {
+  position: relative;
+  padding-left: 53px;
+  padding-right: 53px;
+  margin-top: 60px;
+}
+
+.unnumbered-item-2 {
+  position: relative; 
+  padding-left: 53px;
+  padding-right: 53px;
+  margin-top: 60px;
+}
+
+.unnumbered-item-3 {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 56px;
+}
+.unnumbered-item h3 {
+  font-family: "PT Sans";
   font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .features-bottom-item {
@@ -251,11 +284,10 @@ a.current-item {
   font-size: 14px;
   line-height: 26px;
   
-  margin: 0;
-  max-width: 262px;
-  height: 256px;
+  margin-top: -143px;
+  width: 262px;
+  height: 210px;
   padding-top: 50px;
-  padding-bottom: 64px;
   padding-left: 69px;
   padding-right: 69px;
 
@@ -265,11 +297,6 @@ a.current-item {
   background-color: #eeeeee;
 }
 
-.unnumbered-list li:nth-of-type(1){
-  padding-left: 95px;
-  padding-right: 57px;
-}
-
 .features-bottom-item h3 {
   text-decoration: none; 
   font-family: "PT Sans";
@@ -277,6 +304,33 @@ a.current-item {
   font-size: 21px; 
   line-height: 26px; 
   color: #000000;
+}
+
+.feedback-item {
+  position: relative;
+  width: 291px;
+  margin-left: 70px;
+  margin-top: 48px;
+  padding-left: 383px;
+  padding-right: 383px;
+  text-align: center;
+}
+.feedback-item b {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  
+}
+
+.feedback-item p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+
 }
 
 /*фильтры в каталоге*/
@@ -558,40 +612,48 @@ down:active {
 
 /*форма на главной*/
 .hotels-search {
+  position: relative;
+  margin-top: -40px;
   margin-left: 316px;
-  margin-right: 316px;
-  padding-right: 55px;
+  padding-top: 42px;
   width: 568px;
   height: 395px;
   text-align: center;
   
   background-color: #ffffff;
+  display: inline-block;
+  z-index: 1;
 }
-.hotels-search-item {
-  font-family: "PT Sans"; 
+.hotels-search-item,
+.letters {
+  font-family: "PT Sans", Arial, sans-serif; 
   font-weight: 700;
+  font-size: 14px;
   line-height: 26px;
   margin-right: 41px;
 }
 
 .search {
+  position: relative;
+  margin-top: -24px;
   text-decoration: none; 
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   font-size: 21px; 
   line-height: 26px; 
+  z-index: 1;
 }
   
   .search a{
   display: block;
-  margin-top: 52px;
-  margin-bottom: 55px;
+  margin-top: 53px;
+  margin-bottom: 32px;
   margin-left: 316px;
   margin-right: 316px;
   
-  padding-top: 35px;
-  padding-bottom: 33px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   
   width: 568px;
   background-color: #766257;
@@ -670,6 +732,9 @@ input.numbers {
 .symbol-plus {
   margin-left: -4px;
 }
+button.calendar {
+  margin-left: -45px;
+}
 button.calendar,
 .symbol-minus,
 .symbol-plus {
@@ -689,7 +754,13 @@ button:active {
 }
 
 button.find {
-  margin-top: 55px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px; 
+  line-height: 26px; 
+  
+  margin-top: 48px;
   margin-bottom: 55px;
   
   width: 456px;
@@ -710,9 +781,15 @@ button.find:active {
   color: #6da5c6;
   background-color: #5596be;
 }
+.map {
+  position: relative;
+  bottom: 395px;
+}
 
 /*footer*/
 footer {
+  position: relative;
+  margin-top: -520px;
   height: 120px;
   padding-left: 132px;
   padding-right: 101px;
@@ -720,7 +797,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
- 
+  background-color: #ffffff;
   opacity: 0.9;
 
 }
@@ -753,7 +830,9 @@ footer {
   background-color: #81b3d2;
 }
 
-
+.html-logo {
+  display: inline-block;
+}
 .social-icons-item:hover {
   background-color: #669ec0;
 }
